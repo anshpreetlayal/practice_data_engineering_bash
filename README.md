@@ -40,7 +40,7 @@ ls -d */
 
 ```bash
 
-# Change directory
+# Change directory or go to the root directory
 cd /
 
 # Go to the root directory
@@ -55,10 +55,12 @@ cd [directory/folder name]
 # Go to a file within a directory
 cd Directoryname/Filename/
 
-# Open a file with spaces
+# To Open a file with spaces, we can use any of these three options
 cd My\ Books
 cd "My Books"
 cd 'My Books'
 
 ```
 
+# Cat command
+- reads each File parameter in sequence and writes it to standard output
