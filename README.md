@@ -33,6 +33,9 @@ ls -lS
 # List all directories
 ls -d */
 
+#to explore other usgaes for the ls command type in 
+man ls
+
 ```
 
 # cd command
