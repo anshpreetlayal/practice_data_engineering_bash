@@ -65,5 +65,32 @@ cd 'My Books'
 
 ```
 
-# Cat command
-- reads each File parameter in sequence and writes it to standard output
+# `cat` Command
+The `cat` command in Unix-like operating systems is used to concatenate and display the content of files. It is a versatile command that can be used for various purposes related to file manipulation.
+
+## Basic Syntax
+
+```bash
+cat [options] [filename(s)]
+```
+
+```bash
+# Display content of a file
+cat filename
+
+#Concatenate and display the content of multiple files.
+cat file1 file2
+
+#Combine the content of files and redirect the output to a new file.
+cat file1 file2 > newfile
+
+# Display content with line numbers
+cat -n filename
+
+# Display content with line numbers, ignoring empty lines
+cat -b filename
+
+# Display content with empty lines squeezed
+cat -s filename
+
+```
