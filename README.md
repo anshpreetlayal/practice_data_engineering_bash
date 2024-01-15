@@ -3,14 +3,14 @@
 # Shell Basics
 
 # pwd: 
--Present Working Directory
+- Present Working Directory
 
 ```bash
 pwd
 ```
 
 # ls command
-# List the content of a directory
+ - List the content of a directory
 ```bash
 
 ls [options] [filename]  # or ls filename/ to list contents of a particular directory
@@ -35,6 +35,30 @@ ls -d */
 
 ```
 
-=======
+# cd command
+- displays the name of or changes the current directory.
 
->>>>>>> 340d4ca0e6ddc2fb1f45c77d04160960b5cf7fa4
+```bash
+
+# Change directory
+cd /
+
+# Go to the root directory
+cd ~
+
+# Go back one directory/folder
+cd ..
+
+# Go to a specific directory or use absolute path
+cd [directory/folder name]
+
+# Go to a file within a directory
+cd Directoryname/Filename/
+
+# Open a file with spaces
+cd My\ Books
+cd "My Books"
+cd 'My Books'
+
+```
+
