@@ -3,14 +3,14 @@
 # Shell Basics
 
 # pwd: 
-- Present Working Directory
+Present Working Directory
 
 ```bash
 pwd
 ```
 
 # `ls` command
- - List the content of a directory
+  List the content of a directory
 ```bash
 
 ls [options] [filename]  # or ls filename/ to list contents of a particular directory
@@ -53,7 +53,7 @@ cd ~
 cd ..
 
 # Go to a specific directory or use absolute path
-cd [directory/folder name]
+cd [directory/foldername]
 
 # Go to a file within a directory
 cd Directoryname/Filename/
@@ -96,7 +96,7 @@ ansh@Xubuntu:~$ cat -b hello.txt
      4  nana
      5  dazai
 
-cat -n hello.txt = adds numbers to all the linesin a file even if ithas line breaks
+# Display content with line numbers, including empty lines
 ansh@Xubuntu:~$ cat -n hello.txt
      1  hello cat
      2  spike
@@ -105,78 +105,90 @@ ansh@Xubuntu:~$ cat -n hello.txt
      5
      6  dazai
 
-  cat > test.txt =  I/O Redirection works in Linux, Redirect all output to file    
-   cat >> test.txt = to appened to a existing content to a file
+# I/O Redirection in Linux
+# Redirect all output to a file
+cat > test.txt
 
-   cat filename1 filename2 > newfile.txt = to put together content of two files in a new one
+# Append to an existing file
+cat >> test.txt
 
-   cat filename1 >> filename2 = to append from filename 1 to filename2
+# Combine content of two files into a new one
+cat filename1 filename2 > newfile.txt
 
+# Append content from filename1 to filename2
+cat filename1 >> filename2
 
-   Mkdir command
-#create directory
-   mkdir [directoryname]
+```
 
-#create sudirectory in a directory
-mkdir DirectoryName/SubdiretoryName
+# `Mkdir` command
+The `mkdir` command in Unix-like operating systems, including Linux, is used to create directories (folders). The name "mkdir" stands for "make directory." The basic syntax of the mkdir command is:
 
-#to create s structured directoyr 
+mkdir [options] directory_name
 
+```bash
+# Create a directory
+mkdir [directoryname]
+
+# Create a subdirectory in a directory
+mkdir DirectoryName/SubdirectoryName
+
+# Create a structured directory
 mkdir -p names/mark or mkdir --parents names/mark
 
-#to create multiple subdirectories ina  directory
+# Create multiple subdirectories in a directory
 mkdir -p names/{john,tom,bob}
 
-rmdir 
-#removes desired directory
+```
+
+# `rmdir` and `rm` command 
+The `rmdir` and `rm` commands are used in Unix-like operating systems, including Linux, for removing directories and files. 
+rmdir Command:
+The `rmdir` command is primarily used for removing empty directories. The basic syntax is:
+rmdir [options] directory_name
+
+
+```bash
+# Remove a directory
 rmdir filename
 
-#to delete a whole directory structure (removes the file in structure)
-rmdir -p  a/b/c/d/e
+# Delete a whole directory structure (removes the file in structure)
+rmdir -p a/b/c/d/e
 
-#to display the extended info of the command output
-ansh@Xubuntu:~/Desktop$ rmdir -pv  a/b/c/d/e
-rmdir: removing directory, 'a/b/c/d/e'
-rmdir: removing directory, 'a/b/c/d'
-rmdir: removing directory, 'a/b/c'
-rmdir: removing directory, 'a/b'
-rmdir: removing directory, 'a'
+# Display extended info of the command output
+ansh@Xubuntu:~/Desktop$ rmdir -pv a/b/c/d/e
 
-# if directory contains file , we use rm to remove the direcory structure
-ansh@Xubuntu:~/Desktop$ rmdir -pv  a/b/c/d/e
-rmdir: removing directory, 'a/b/c/d/e'
-rmdir: removing directory, 'a/b/c/d'
-rmdir: removing directory, 'a/b/c'
-rmdir: removing directory, 'a/b'
-rmdir: failed to remove directory 'a/b': Directory not empty
+rm Command:
+The rm command is more versatile and is used for removing files and directories, including non-empty ones. The basic syntax is:
+rm [options] file_name
 
+#Verbose Output:
+rm -v file_name
+
+#promt before removal
+rm -i file_name
+
+#removing a directory and its content
+rm -r directory_name
+
+# If a directory contains files, use rm to remove the directory structure
 ansh@Xubuntu:~/Desktop$ rm -rv a/b/
-removed 'a/b/abc.txt'
-removed directory 'a/b/'
-
-#above the command has only removed b directory because a is a parent directory here so to remove a too we use
-
 ansh@Xubuntu:~/Desktop$ rm -r a
+```
 
-cp command
+# `cp` command
+The `cp` command in Unix-like operating systems is used to copy files and directories. The basic syntax is:
 syntax: 
  cp options source destination
 
-#copy a fil to a file 
- cp filename1  filename2
+```bash
+# Copy a file to another file
+cp filename1 filename2
 
-#copy a file to a directory
-syntax :cp filename directoryname
+# Copy a file to a directory
+cp filename directoryname
 
-ansh@Xubuntu:~/Desktop$ cp one.txt names
-ansh@Xubuntu:~/Desktop$ ls names
-bob  john  mark  one.txt  tom
-ansh@Xubuntu:~/Desktop$ cp two.txt names
-ansh@Xubuntu:~/Desktop$ ls names
-bob  john  mark  one.txt  tom  two.txt
-
-#to avoid overwriting use this flag because it asks before overwriting
-syntax = cp -i filename filename2 directoryname
+# Use -i flag to prompt before overwriting
+cp -i filename filename2 directoryname
 
 ansh@Xubuntu:~/Desktop$ cp -i one.txt two.txt names
 cp: overwrite 'names/one.txt'? y
