@@ -78,3 +78,91 @@ ansh@Xubuntu:~$ cat -n hello.txt
      4  nana
      5
      6  dazai
+
+  cat > test.txt =  I/O Redirection works in Linux, Redirect all output to file    
+   cat >> test.txt = to appened to a existing content to a file
+
+   cat filename1 filename2 > newfile.txt = to put together content of two files in a new one
+
+   cat filename1 >> filename2 = to append from filename 1 to filename2
+
+
+   Mkdir command
+#create directory
+   mkdir [directoryname]
+
+#create sudirectory in a directory
+mkdir DirectoryName/SubdiretoryName
+
+#to create s structured directoyr 
+
+mkdir -p names/mark or mkdir --parents names/mark
+
+#to create multiple subdirectories ina  directory
+mkdir -p names/{john,tom,bob}
+
+rmdir 
+#removes desired directory
+rmdir filename
+
+#to delete a whole directory structure (removes the file in structure)
+rmdir -p  a/b/c/d/e
+
+#to display the extended info of the command output
+ansh@Xubuntu:~/Desktop$ rmdir -pv  a/b/c/d/e
+rmdir: removing directory, 'a/b/c/d/e'
+rmdir: removing directory, 'a/b/c/d'
+rmdir: removing directory, 'a/b/c'
+rmdir: removing directory, 'a/b'
+rmdir: removing directory, 'a'
+
+# if directory contains file , we use rm to remove the direcory structure
+ansh@Xubuntu:~/Desktop$ rmdir -pv  a/b/c/d/e
+rmdir: removing directory, 'a/b/c/d/e'
+rmdir: removing directory, 'a/b/c/d'
+rmdir: removing directory, 'a/b/c'
+rmdir: removing directory, 'a/b'
+rmdir: failed to remove directory 'a/b': Directory not empty
+
+ansh@Xubuntu:~/Desktop$ rm -rv a/b/
+removed 'a/b/abc.txt'
+removed directory 'a/b/'
+
+#above the command has only removed b directory because a is a parent directory here so to remove a too we use
+
+ansh@Xubuntu:~/Desktop$ rm -r a
+
+cp command
+syntax: 
+ cp options source destination
+
+#copy a fil to a file 
+ cp filename1  filename2
+
+#copy a file to a directory
+syntax :cp filename directoryname
+
+ansh@Xubuntu:~/Desktop$ cp one.txt names
+ansh@Xubuntu:~/Desktop$ ls names
+bob  john  mark  one.txt  tom
+ansh@Xubuntu:~/Desktop$ cp two.txt names
+ansh@Xubuntu:~/Desktop$ ls names
+bob  john  mark  one.txt  tom  two.txt
+
+#to avoid overwriting use this flag because it asks before overwriting
+syntax = cp -i filename filename2 directoryname
+
+ansh@Xubuntu:~/Desktop$ cp -i one.txt two.txt names
+cp: overwrite 'names/one.txt'? y
+cp: overwrite 'names/two.txt'? y
+ansh@Xubuntu:~/Desktop$ 
+
+#to copy directory to a new nonexistant directory 
+ansh@Xubuntu:~/Desktop$ cp names new
+cp: -r not specified; omitting directory 'names'
+ansh@Xubuntu:~/Desktop$ cp -R names new
+ansh@Xubuntu:~/Desktop$ ls
+image  names  new  one.txt  two.txt
+ansh@Xubuntu:~/Desktop$ ls new
+bob  john  mark  one.txt  tom  two.txt
+ansh@Xubuntu:~/Desktop$ 
