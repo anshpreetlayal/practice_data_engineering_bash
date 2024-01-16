@@ -192,3 +192,78 @@ image  names  new  one.txt  two.txt
 ansh@Xubuntu:~/Desktop$ ls new
 bob  john  mark  one.txt  tom  two.txt
 ansh@Xubuntu:~/Desktop$ 
+
+
+
+# mv command
+ mv command moves files and directories from one directory to another or renames a file or directory
+syntax:
+mv options source destination
+
+#to move the content of a file to a new file
+mv filrname1 filename2 
+
+#move file to a directory
+mv filename directoryname/
+
+#to move a file to a directory which has a similar named file but with different content. mv command overwrites the existing file with th enew one. Use -i flag because it asks for permission before overwiritng 
+mv -i filename directory
+
+#move a directory's content to another directory
+mv directory1 directory2
+
+#less command
+#shows the content from the start
+less filename
+
+#to quit less command press "q"
+
+#to explre the usages of less command 
+man less
+
+
+#touch command
+
+#to create a new empty file (cannot create a directory with touch)
+touch filename
+
+#to change the timestamp of the file
+touch filename
+
+#nano command
+
+#to vreate a file and type its content in it | Press ctrl o to save content |Press ctrl+x to exit nano
+nano filename 
+
+#can create code files too
+nano filename.extension
+
+
+#sudo command
+
+#can run the commands as an administrator, for example to create a new directory in a existing directory 
+ansh@Xubuntu:/etc$ mkdir newdir
+mkdir: cannot create directory ‘newdir’: Permission denied
+ansh@Xubuntu:/etc$ sudo mkdir newdir
+[sudo] password for ansh: 
+ansh@Xubuntu:/etc$ 
+
+# same if you want to install any libraries or other stuff
+sudo the install command 
+
+#to go superuser mode
+sudo -s
+
+#top command
+top, press s and type in refresh timing 
+#kill command
+
+#echo command
+
+#File permissions and Symbolic permissions
+
+#directory permissions and chmod 
+
+#Octal and numerical permissions
+
+
