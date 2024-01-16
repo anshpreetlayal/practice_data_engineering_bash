@@ -53,7 +53,7 @@ cd ~
 cd ..
 
 # Go to a specific directory or use absolute path
-cd [directory/folder name]
+cd [directory/foldername]
 
 # Go to a file within a directory
 cd Directoryname/Filename/
@@ -96,7 +96,7 @@ ansh@Xubuntu:~$ cat -b hello.txt
      4  nana
      5  dazai
 
-cat -n hello.txt = adds numbers to all the linesin a file even if ithas line breaks
+# Display content with line numbers, including empty lines
 ansh@Xubuntu:~$ cat -n hello.txt
      1  hello cat
      2  spike
@@ -105,29 +105,42 @@ ansh@Xubuntu:~$ cat -n hello.txt
      5
      6  dazai
 
-  cat > test.txt =  I/O Redirection works in Linux, Redirect all output to file    
-   cat >> test.txt = to appened to a existing content to a file
+# I/O Redirection in Linux
+# Redirect all output to a file
+cat > test.txt
 
-   cat filename1 filename2 > newfile.txt = to put together content of two files in a new one
+# Append to an existing file
+cat >> test.txt
 
-   cat filename1 >> filename2 = to append from filename 1 to filename2
+# Combine content of two files into a new one
+cat filename1 filename2 > newfile.txt
 
+# Append content from filename1 to filename2
+cat filename1 >> filename2
 
-   Mkdir command
-#create directory
-   mkdir [directoryname]
+```
 
-#create sudirectory in a directory
-mkdir DirectoryName/SubdiretoryName
+# Mkdir command
 
-#to create s structured directoyr 
+ Mkdir command
 
+```bash
+# Create a directory
+mkdir [directoryname]
+
+# Create a subdirectory in a directory
+mkdir DirectoryName/SubdirectoryName
+
+# Create a structured directory
 mkdir -p names/mark or mkdir --parents names/mark
 
-#to create multiple subdirectories ina  directory
+# Create multiple subdirectories in a directory
 mkdir -p names/{john,tom,bob}
 
-rmdir 
+```
+
+# rmdir and rm command 
+```bash
 #removes desired directory
 rmdir filename
 
@@ -157,11 +170,13 @@ removed directory 'a/b/'
 #above the command has only removed b directory because a is a parent directory here so to remove a too we use
 
 ansh@Xubuntu:~/Desktop$ rm -r a
+```
 
-cp command
+# cp command
 syntax: 
  cp options source destination
 
+```bash
 #copy a fil to a file 
  cp filename1  filename2
 
@@ -192,3 +207,4 @@ image  names  new  one.txt  two.txt
 ansh@Xubuntu:~/Desktop$ ls new
 bob  john  mark  one.txt  tom  two.txt
 ansh@Xubuntu:~/Desktop$ 
+```
