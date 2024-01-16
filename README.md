@@ -9,7 +9,7 @@
 pwd
 ```
 
-# ls command
+# `ls` command
  - List the content of a directory
 ```bash
 
@@ -38,15 +38,15 @@ man ls
 
 ```
 
-# cd command
-- displays the name of or changes the current directory.
+# `cd` Command - Change Directory
+The `cd`  command in the shell is a versatile tool for navigating the file system. It is used to display the name of the current working directory or to change the current directory. Below are some common use cases:
 
 ```bash
 
-# Change directory or go to the root directory
+# Change to the Root Directory:
 cd /
 
-# Go to the root directory
+# Go to the home directory
 cd ~
 
 # Go back one directory/folder
