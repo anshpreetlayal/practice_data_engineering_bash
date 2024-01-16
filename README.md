@@ -1,67 +1,93 @@
-# practice_data_engineering_bash
-A repository dedicated to Bash scripts, demonstrating my capability in using scripting languages for automating data pipeline orchestration and various data engineering workflows. Explore my solutions for efficient system automation and data management through sophisticated Bash scripting.
 
 
-shell :
-command line interface:
-pwd : present working directory
+# Shell Basics
 
-ls command:
-ls: list the content of a direcotry
-ls [options] [filename]  and ls filename/ to list contents od a particualr directory
-ls ~ = lists content of a home directory
-ls -l = list out diretory files in detail
+# pwd: 
+- Present Working Directory
 
-owners rights - group rights - others right
-drwxr = directory read write execute rights 
+```bash
+pwd
+```
 
-ls -a = shows hidden files ( hidden files starts with a dot)
+# `ls` command
+ - List the content of a directory
+```bash
 
-ls -al = list hidden files in detail
-ls -lS = sort your directory by their size
+ls [options] [filename]  # or ls filename/ to list contents of a particular directory
 
-ls [directoryname]/*
-ls [directoryname]/*.*
- ls -lS > out.txt ( arrow is the stream indicator) = to move the listed content into a new/other file
+# List content of the home directory
+ls ~
 
-ls -d */ = to list out all the directorues
+# List directory files in detail
+ls -l
 
-man ls = to lookat all the uses of ls command (man is a command library of sorts)
+# Show hidden files (files starting with a dot)
+ls -a
 
+# List hidden files in detail
+ls -al
 
+# Sort directory by size
+ls -lS
 
-cd command:
-cd = change directory 
-cd / = to go to the root directory
-cd ~ =
-cd .. = goes back one directory/ folder
-cd [directory/folder name](relative path) or you cn put in the absolute path / // /
+# List all directories
+ls -d */
 
-cd Directoryname/Filename/ = to go in a file within a  directory
+#to explore other usgaes for the ls command type in 
+man ls
 
-Three ways open a file witch has space within it
+```
+
+# `cd` Command - Change Directory
+The `cd`  command in the shell is a versatile tool for navigating the file system. It is used to display the name of the current working directory or to change the current directory. Below are some common use cases:
+
+```bash
+
+# Change to the Root Directory:
+cd /
+
+# Go to the home directory
+cd ~
+
+# Go back one directory/folder
+cd ..
+
+# Go to a specific directory or use absolute path
+cd [directory/folder name]
+
+# Go to a file within a directory
+cd Directoryname/Filename/
+
+# To Open a file with spaces, we can use any of these three options
 cd My\ Books
 cd "My Books"
 cd 'My Books'
 
-cat command:
-syntax
-cat option filename1 filename2 ..
+```
 
-to go out froma  cat command (ctrl+d)
+# `cat` Command
+The `cat` command in Unix-like operating systems is used to concatenate and display the content of files. It is a versatile command that can be used for various purposes related to file manipulation.
 
-cat filename = displays content of a file
-ansh@Xubuntu:~$ ls
-code-latest.deb  Documents  hello.txt  Pictures  repos  Templates
-Desktop          Downloads  Music      Public    snap   Videos
-ansh@Xubuntu:~$ cat hello.txt
-ansh@Xubuntu:~$ cat hello.txt
-hello cat
-spike
-legal
-nana
-dazai
+## Basic Syntax
 
+```bash
+cat [options] [filename(s)]
+```
+
+```bash
+# Display content of a file
+cat filename
+
+#Concatenate and display the content of multiple files.
+cat file1 file2
+
+#Combine the content of files and redirect the output to a new file.
+cat file1 file2 > newfile
+
+# Display content with line numbers
+cat -n filename
+
+# Display content with line numbers, ignoring empty lines
 cat -b filename
 ansh@Xubuntu:~$ cat -b hello.txt
      1  hello cat
