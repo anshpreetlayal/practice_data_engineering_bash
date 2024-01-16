@@ -193,3 +193,7 @@ cp -i filename filename2 directoryname
 # Copy a directory to a new nonexistent directory
 cp -R names new
 ```
+
+# `mv` command
+The `mv` command 
+syntax: 
