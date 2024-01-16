@@ -120,9 +120,10 @@ cat filename1 >> filename2
 
 ```
 
-# Mkdir command
+# `Mkdir` command
+The `mkdir` command in Unix-like operating systems, including Linux, is used to create directories (folders). The name "mkdir" stands for "make directory." The basic syntax of the mkdir command is:
 
- Mkdir command
+mkdir [options] directory_name
 
 ```bash
 # Create a directory
@@ -139,72 +140,56 @@ mkdir -p names/{john,tom,bob}
 
 ```
 
-# rmdir and rm command 
+# `rmdir` and `rm` command 
+The `rmdir` and `rm` commands are used in Unix-like operating systems, including Linux, for removing directories and files. 
+rmdir Command:
+The `rmdir` command is primarily used for removing empty directories. The basic syntax is:
+rmdir [options] directory_name
+
+
 ```bash
-#removes desired directory
+# Remove a directory
 rmdir filename
 
-#to delete a whole directory structure (removes the file in structure)
-rmdir -p  a/b/c/d/e
+# Delete a whole directory structure (removes the file in structure)
+rmdir -p a/b/c/d/e
 
-#to display the extended info of the command output
-ansh@Xubuntu:~/Desktop$ rmdir -pv  a/b/c/d/e
-rmdir: removing directory, 'a/b/c/d/e'
-rmdir: removing directory, 'a/b/c/d'
-rmdir: removing directory, 'a/b/c'
-rmdir: removing directory, 'a/b'
-rmdir: removing directory, 'a'
+# Display extended info of the command output
+ansh@Xubuntu:~/Desktop$ rmdir -pv a/b/c/d/e
 
-# if directory contains file , we use rm to remove the direcory structure
-ansh@Xubuntu:~/Desktop$ rmdir -pv  a/b/c/d/e
-rmdir: removing directory, 'a/b/c/d/e'
-rmdir: removing directory, 'a/b/c/d'
-rmdir: removing directory, 'a/b/c'
-rmdir: removing directory, 'a/b'
-rmdir: failed to remove directory 'a/b': Directory not empty
+rm Command:
+The rm command is more versatile and is used for removing files and directories, including non-empty ones. The basic syntax is:
+rm [options] file_name
 
+#Verbose Output:
+rm -v file_name
+
+#promt before removal
+rm -i file_name
+
+#removing a directory and its content
+rm -r directory_name
+
+# If a directory contains files, use rm to remove the directory structure
 ansh@Xubuntu:~/Desktop$ rm -rv a/b/
-removed 'a/b/abc.txt'
-removed directory 'a/b/'
-
-#above the command has only removed b directory because a is a parent directory here so to remove a too we use
-
 ansh@Xubuntu:~/Desktop$ rm -r a
 ```
 
-# cp command
+# `cp` command
+The `cp` command in Unix-like operating systems is used to copy files and directories. The basic syntax is:
 syntax: 
  cp options source destination
 
 ```bash
-#copy a fil to a file 
- cp filename1  filename2
+# Copy a file to another file
+cp filename1 filename2
 
-#copy a file to a directory
-syntax :cp filename directoryname
+# Copy a file to a directory
+cp filename directoryname
 
-ansh@Xubuntu:~/Desktop$ cp one.txt names
-ansh@Xubuntu:~/Desktop$ ls names
-bob  john  mark  one.txt  tom
-ansh@Xubuntu:~/Desktop$ cp two.txt names
-ansh@Xubuntu:~/Desktop$ ls names
-bob  john  mark  one.txt  tom  two.txt
+# Use -i flag to prompt before overwriting
+cp -i filename filename2 directoryname
 
-#to avoid overwriting use this flag because it asks before overwriting
-syntax = cp -i filename filename2 directoryname
-
-ansh@Xubuntu:~/Desktop$ cp -i one.txt two.txt names
-cp: overwrite 'names/one.txt'? y
-cp: overwrite 'names/two.txt'? y
-ansh@Xubuntu:~/Desktop$ 
-
-#to copy directory to a new nonexistant directory 
-ansh@Xubuntu:~/Desktop$ cp names new
-cp: -r not specified; omitting directory 'names'
-ansh@Xubuntu:~/Desktop$ cp -R names new
-ansh@Xubuntu:~/Desktop$ ls
-image  names  new  one.txt  two.txt
-ansh@Xubuntu:~/Desktop$ ls new
-bob  john  mark  one.txt  tom  two.txt
-ansh@Xubuntu:~/Desktop$ 
+# Copy a directory to a new nonexistent directory
+cp -R names new
 ```
