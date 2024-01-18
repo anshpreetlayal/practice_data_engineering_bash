@@ -384,31 +384,124 @@ top
 ```
 
 
+# kill command
+#get the pid of a process
+ pidof processname
 
+#in order to kill the process
+kill pid(thepid number)
 
+#powerfull command to kill processes
+kill -9 pidnumner
 
+#to find out list of running processes
+ps -ux
 
+#then use kill command to kill process
 
+# echo command
 
+#to print somthing
+echo "hello world"
 
+#to create variables and print them (for example)
+ansh@Xubuntu:~$ myvar="may"
+ansh@Xubuntu:~$ echo $myvar
 
+ansh@Xubuntu:~$ x=10
+ansh@Xubuntu:~$ echo "the value of x is $x"
+the value of x is 10
 
-
-
-
-
-
-
-
-
-#kill command
-
-#echo command
 
 #File permissions and Symbolic permissions
 
+#change the permission of a file, syntax:
+chmod 
+
+
 #directory permissions and chmod 
+
 
 #Octal and numerical permissions
 
+
+#Bash scripting
+
+#Which command
+
+
+#whatis command
+
+#useradd 
+
+#useradd
+
+#group management 
+#to look at the groups
+ cat /etc/group
+
+ #to add new group
+ sudo groupadd  groupname
+
+ #to delete group
+ sudo groupdel groupname 
+
+ #to add a user to a group
+ sudo gpasswd -a username groupname
+# .bashrc file
+
+# to look at the file
+nano .bashrc 
+#to edit the file
+nano .bashrc
+
+#viewing resources (du,df,free)
+
+#df tells about avaialble disk apce(-h flag used for human radble)
+
+df -h 
+
+#du 
+
+#watch command
+
+#head command
+
+#first 10 lines 
+head filename 
+
+#to customize the lins you want to see
+head -n3 filename
+#tail command
+
+#to customize the lins you want to see
+tail -n3 filename
+
+#LAST     10 lines
+tail filename
+
+#find command
+used to search for files in directory heirarchy
+#wc command
+
+#cal command
+
+#date command
+
+#how to run multiple terminal commands
+
+# apt-get command 
+
+# ifconfig command
+
+#tar command
+
+#grep command
+
+# netstat command
+
+
+
+
+#Bash scripting
 
