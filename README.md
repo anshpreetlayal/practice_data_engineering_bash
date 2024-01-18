@@ -382,126 +382,116 @@ top
 #Press 'n' to filter by process name: Enter a process name to display only matching processes.
 
 ```
+# Kill command
+```bash
+# Get the PID of a process
+pidof processname
 
-
-# kill command
-#get the pid of a process
- pidof processname
-
-#in order to kill the process
+# In order to kill the process
 kill pid(thepid number)
 
-#powerfull command to kill processes
-kill -9 pidnumner
+# Powerful command to kill processes
+kill -9 pidnumber
 
-#to find out list of running processes
+# To find out the list of running processes
 ps -ux
 
-#then use kill command to kill process
+# Then use the kill command to kill the process
+```
 
-# echo command
-
-#to print somthing
+# Echo command
+```
+# To print something
 echo "hello world"
 
-#to create variables and print them (for example)
+# To create variables and print them (for example)
 ansh@Xubuntu:~$ myvar="may"
 ansh@Xubuntu:~$ echo $myvar
 
 ansh@Xubuntu:~$ x=10
 ansh@Xubuntu:~$ echo "the value of x is $x"
 the value of x is 10
+```
 
+# File permissions and Symbolic permissions
 
-#File permissions and Symbolic permissions
+# Change the permission of a file, syntax:
+chmod
 
-#change the permission of a file, syntax:
-chmod 
+# Directory permissions and chmod
 
+# Octal and numerical permissions
 
-#directory permissions and chmod 
+# Bash scripting
 
+# Which command
 
-#Octal and numerical permissions
+# Whatis command
 
+# Useradd
 
-#Bash scripting
+# Useradd
 
-#Which command
+# Group management
+```bash
+# To look at the groups
+cat /etc/group
 
+# To add a new group
+sudo groupadd groupname
 
-#whatis command
+# To delete a group
+sudo groupdel groupname
 
-#useradd 
+# To add a user to a group
+sudo gpasswd -a username groupname
+```
 
-#useradd
-
-#group management 
-#to look at the groups
- cat /etc/group
-
- #to add new group
- sudo groupadd  groupname
-
- #to delete group
- sudo groupdel groupname 
-
- #to add a user to a group
- sudo gpasswd -a username groupname
 # .bashrc file
-
-# to look at the file
-nano .bashrc 
-#to edit the file
+```bash
+# To look at the file
 nano .bashrc
+# To edit the file
+gedit .bashrc    
+```
+# Viewing resources (du, df, free)
+# df tells about available disk space (-h flag used for human-readable)
+df -h
 
-#viewing resources (du,df,free)
+# du
 
-#df tells about avaialble disk apce(-h flag used for human radble)
+# Watch command
 
-df -h 
-
-#du 
-
-#watch command
-
-#head command
-
-#first 10 lines 
-head filename 
-
-#to customize the lins you want to see
+# Head command
+# First 10 lines
+head filename
+# To customize the lines you want to see
 head -n3 filename
-#tail command
 
-#to customize the lins you want to see
+# Tail command
+# To customize the lines you want to see
 tail -n3 filename
-
-#LAST     10 lines
+# Last 10 lines
 tail filename
 
-#find command
-used to search for files in directory heirarchy
-#wc command
+# Find command
+# Used to search for files in directory hierarchy
+# wc command
 
-#cal command
+# cal command
 
-#date command
+# date command
 
-#how to run multiple terminal commands
+# How to run multiple terminal commands
 
-# apt-get command 
+# apt-get command
 
 # ifconfig command
 
-#tar command
+# tar command
 
-#grep command
+# grep command
 
 # netstat command
 
-
-
-
-#Bash scripting
-
+# Bash scripting
