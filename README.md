@@ -588,7 +588,7 @@ Common Options:
 #Always refer to the manual page for useradd (man useradd) for a comprehensive list of options and details about the command.
 
 # `Userdel`
-The userdel command in Unix and Linux operating systems is used to delete user accounts from the system.
+The `userdel` command in Unix and Linux operating systems is used to delete user accounts from the system.
  It removes the user's entry from the system files, including the password file (/etc/passwd), the shadow password file (/etc/shadow), and other relevant user-related files.
 the basic syntax of the userdel command:
 sudo userdel [options] username
@@ -604,7 +604,6 @@ Common Options:
 
 
 # `Group management`
-
 Group management in Unix and Linux involves creating, modifying, and deleting groups. 
 Groups are used to organize users, allowing them to share common permissions and access to files and resources. The key commands for group management include groupadd, groupdel, and gpasswd.
 ```bash
@@ -621,8 +620,8 @@ sudo groupdel groupname
 sudo gpasswd -a username groupname
 ```
 
-# .bashrc file
-The .bashrc file is a script that runs whenever a new interactive Bash shell is started. It is commonly used to customize the behavior of the shell for individual users. Here are some details about the .bashrc file:
+# `.bashrc` file
+The `.bashrc` file is a script that runs whenever a new interactive Bash shell is started. It is commonly used to customize the behavior of the shell for individual users. Here are some details about the .bashrc file:
 Location:
 The .bashrc file is typically located in a user's home directory. The file is hidden, which means its name begins with a dot. The full path is usually ~/.bashrc, where ~ represents the user's home directory.
 Purpose:
@@ -642,7 +641,7 @@ source ~/.bashrc
 # Viewing resources (`du`, `df`, `free`)
 The commands `du`, `df`, and `free` are used to view information about disk usage and system memory. Here's a brief overview of each:
 
-1. du - Disk Usage: 
+1. `du` - Disk Usage: 
 The du command is used to estimate the space used by a directory or file.
 Syntax:
 du [options] [directory/file]
@@ -653,7 +652,7 @@ du -sh /path/to/directory
 #-s: Display only the total for each specified file or directory.
 #-h: Human-readable output (e.g., KB, MB, GB).
 ```
-2. df - Disk Free:
+2. `df` - Disk Free:
 The df command shows information about disk space usage on mounted filesystems.
 Syntax:
 df [options]
@@ -665,7 +664,7 @@ df -h
 -T: Display the filesystem type along with the disk space information.
 ```
 
-3. free - Display System Memory:
+3. `free` - Display System Memory:
 The free command shows information about system memory usage.
 Syntax:
 free [options]
@@ -677,8 +676,8 @@ free -h
 -t: Display a line showing the total memory.
 ```
 
-# Watch command
-The watch command is used to execute a command periodically and display the output in a clear and formatted way.
+# `Watch` command
+The `watch` command is used to execute a command periodically and display the output in a clear and formatted way.
 It is particularly useful for monitoring changes over time. 
 The basic syntax of the watch command:
 watch [options] command
@@ -699,8 +698,8 @@ Common Options:
 
 ```
 
-# Head command
-The head command in Unix and Linux is used to display the beginning (head) portion of a text file or the output of a command. By default, it displays the first 10 lines of a file. 
+# `Head` command
+The `head` command in Unix and Linux is used to display the beginning (head) portion of a text file or the output of a command. By default, it displays the first 10 lines of a file. 
 The basic syntax:
 head [options] [file(s)]
 
@@ -726,8 +725,8 @@ Common Options:
 -q or --quiet, --silent: Suppress the printing of headers when multiple files are specified.
 
 ```
-# Tail command
-The tail command in Unix and Linux is used to display the last part of a text file or the output of a command. By default, it displays the last 10 lines of a file. 
+# `Tail` command
+The `tail` command in Unix and Linux is used to display the last part of a text file or the output of a command. By default, it displays the last 10 lines of a file. 
 The basic syntax of the tail command:
 tail [options] [file(s)]
 
@@ -754,8 +753,8 @@ Common Options:
 -q or --quiet, --silent: Suppress the printing of headers when multiple files are specified.
 ```
 
-# Find command
-The find command in Unix and Linux is a powerful tool used for searching and locating files and directories based on various criteria. 
+# `Find` command
+The `find` command in Unix and Linux is a powerful tool used for searching and locating files and directories based on various criteria. 
 It is commonly used to perform tasks such as finding files by name, type, size, or modified time.
 The basic syntax of the find command:
 find [path...] [expression]
@@ -781,11 +780,8 @@ Common Expressions:
 -exec command {} +: Execute a command on each matched file.
 ```
 
-
-
-# wc command
-
-The wc command in Unix and Linux is used to count the number of lines, words, and bytes in a file or input provided through a pipeline.
+# `wc` command
+The `wc` command in Unix and Linux is used to count the number of lines, words, and bytes in a file or input provided through a pipeline.
  It's a versatile tool for obtaining various statistics about the content of text files. 
 The basic syntax of the wc command:
 wc [options] [file(s)]
@@ -807,8 +803,9 @@ wc -c -m filename
 echo "Hello, World!" | wc
 
 ```
-# cal command
-The cal command in Unix and Linux is used to display a calendar for a specific month or a whole year.
+
+# `cal` command
+The `cal` command in Unix and Linux is used to display a calendar for a specific month or a whole year.
  It provides a simple and convenient way to view calendar information directly in the terminal. 
 The basic syntax of the cal command:
 cal [options] [month] [year]
@@ -828,8 +825,8 @@ cal -3
 
 ```
 
-# date command
-The date command in Unix and Linux is used to display the current date and time or to set the system date and time.
+# `date` command
+The `date` command in Unix and Linux is used to display the current date and time or to set the system date and time.
 The basic syntax of the date command:
 date [options]
 
@@ -882,7 +879,7 @@ To run commands in the background and redirect their output to a file:
 (command1 > output1.txt &) ; (command2 > output2.txt &) ; (command3 > output3.txt &)
 ```
 
-# apt-get command
+# `apt-get` command
 The `apt-get` command is a package management command-line tool in Debian-based systems, including Ubuntu.
  It is used for handling packages—installing, updating, upgrading, and removing software packages.
 Some common use cases for the `apt-get` command:
@@ -963,7 +960,7 @@ sudo apt-get update
 ```
 
 
-# tar command
+# `tar` command
 The `tar` command in Unix and Linux is used for creating, viewing, and extracting archive files. 
 It stands for "tape archive" and is commonly used to bundle multiple files and directories into a single archive file. 
 Below are  some common use cases for the `tar` command:
@@ -1033,7 +1030,7 @@ tar -tvf archive_name.tar
 - `--exclude=pattern`: Exclude files or directories that match the specified pattern.
 - `--directory`: Specify the directory to extract files into.
 
-# grep command
+# `grep` command
 The `grep` command in Unix and Linux is used for searching text patterns within files. 
 It allows you to match lines in a file that contain a specified pattern. 
 ```bash
@@ -1078,7 +1075,7 @@ grep -f patterns.txt filename
 #- `-f patterns.txt`: Read patterns from a file.
 ```
 
-# netstat command
+# `netstat` command
 
 The `netstat` command in Unix and Linux is used for displaying various networking-related information, including network connections, routing tables, interface statistics, masquerade connections, and multicast memberships. However, similar to `ifconfig`, `netstat` has been deprecated on many modern Linux distributions, and the recommended replacement is the `ss` command or tools like `ip` and `nstat`. Nevertheless, `netstat` is still available on some systems.
 
