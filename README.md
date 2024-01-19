@@ -621,6 +621,10 @@ tail filename
 
 # netstat command
 
+
+
+
+
 # Bash scripting
 
 
