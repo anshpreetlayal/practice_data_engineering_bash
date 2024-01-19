@@ -540,7 +540,7 @@ chmod 111 filename
 
 
 # `Which` command
-The which command is used to locate the executable binary file associated with a given command. 
+The ` which`  command is used to locate the executable binary file associated with a given command. 
 It helps you determine the path of the executable that will be run when you execute a command in the terminal.
  syntax of the which command:
  which command_name
@@ -554,6 +554,18 @@ which ls
 ```
 
 # `Whatis` command
+The ` Whatis` command in Unix-like operating systems is used to display a brief description of a command or a system call. It provides a short summary or manual page entry related to the specified command.
+ the basic syntax:
+whatis command_name
+
+```bash
+#example
+whatis ls
+
+#output
+ls (1)               - list directory contents
+
+```
 
 # `Useradd` 
 
@@ -586,6 +598,8 @@ gedit .bashrc
 df -h
 
 # du
+
+#free
 
 # Watch command
 
@@ -625,27 +639,6 @@ tail filename
 
 
 
-# Bash scripting
 
 
-
-
-
-
-# Bash Shell Scripting 
-What is shell?
-
-Types of shell on a operation system
-nsh@Xubuntu:~$ cat /etc/shells
-# /etc/shells: valid login shells
-/bin/sh
-/bin/bash
-/usr/bin/bash
-/bin/rbash
-/usr/bin/rbash
-/usr/bin/sh
-/bin/dash
-/usr/bin/dash
-
-What is Bash?
 
