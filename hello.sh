@@ -172,3 +172,61 @@ num=4
 echo "scale=2;sqrt($num)" | bc -1
 echo "scale=2;3^3" | bc -1
 
+
+
+#The case statement
+#Basic syntax:
+case expression in
+     pattern1 )
+           statements ;;
+     pattern2 )
+           statements ;;
+     ...
+esac
+
+#first example
+
+vehicle=$1
+case $vehicle in
+     "car" )
+           echo "Rent of $vehicle is 100 dollar" ;;
+     "van" )
+           echo "Rent of $vehicle is 80 dollar" ;;
+     "bicycle" )
+           echo "Rent of $vehicle is 5 dollar" ;;
+     "truck")
+           echo "Rent of $vehicle is 150 dollar" ;;
+        * )
+           echo "Unknown vehicle" ;;
+esac
+
+#second example
+echo -e "Enter some character : \c"
+read value
+case $value in
+     [a-z] )
+           echo "User entered  $value which is between  a to z" ;;
+     [A-Z] )
+           echo "User entered $value which is between is A to Z" ;;
+     [0-9] )
+           echo "User entered $value which is between is 0 to 9" ;;
+       ? )
+           echo "User entered $value is special character" ;;
+        * )
+           echo "unknown input" ;;
+esac
+
+
+#array variables
+
+os=('cat' 'dog' 'ferret' 'otter' 'rabbits')
+os[0]='dolphin' #to add in index
+
+unset os[2] #to remove from index
+echo "${os[@]}"  #to print the array
+echo "${os[1]}" #to print the first array
+echo "${!os[@]}" #to count the number of array
+echo "${#os[@]}" #to print the total number of array
+
+string=sjdhjhf
+echo "${string[@]}"
