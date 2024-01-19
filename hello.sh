@@ -250,3 +250,32 @@ echo "${#os[@]}" #to print the total number of array
 
 string=sjdhjhf
 echo "${string[@]}"
+
+
+#While loops
+#syntax :
+
+while [ condition ]
+do  
+    command1
+    command2
+    command3
+done
+
+#example
+
+n=1
+while [ $n -le 10 ]
+do  
+     echo "$n"
+     n=$(( n+1 ))
+done
+
+#using sleep with while loops
+n=1
+while [ $n -le 10 ]
+do  
+     echo "$n"
+     (( n++ ))
+     sleep 1
+done
