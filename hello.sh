@@ -1,5 +1,25 @@
 #! /bin/bash
 
+
+# Bash Shell Scripting 
+What is shell?
+
+Types of shell on a operation system
+nsh@Xubuntu:~$ cat /etc/shells
+# /etc/shells: valid login shells
+/bin/sh
+/bin/bash
+/usr/bin/bash
+/bin/rbash
+/usr/bin/rbash
+/usr/bin/sh
+/bin/dash
+/usr/bin/dash
+
+What is Bash?
+
+
+
 # this is a comment
 echo "hello world"
 
