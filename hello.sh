@@ -162,7 +162,13 @@ echo $(expr $num1 % $num2 )
 num1=20.5
 num2=4
 
-echo "20.5+5" | bc
+echo "20.5+5" | bc   # can also do  echo "$num1+$num2" | bc 
 echo "20.5-5" | bc
 echo "20.5*5" | bc
 echo "20.5%5" | bc
+echo "scale=20;20.5/5" | bc
+
+num=4 
+echo "scale=2;sqrt($num)" | bc -1
+echo "scale=2;3^3" | bc -1
+
