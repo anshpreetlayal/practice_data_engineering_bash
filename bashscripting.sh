@@ -48,7 +48,8 @@ echo our current working directory is $PWD
 #ansh@Xubuntu:~/Desktop$ 
 
 
-#Read user input
+#Bash scripting examples
+# Read user input
 
 echo "Enter names: "
 read name1 name2 name3 
@@ -249,3 +250,74 @@ while [ $n -le 10 ]; do
      (( n++ ))
      sleep 1
 done
+
+
+# ways to read file content in bash
+#1
+while read p
+do 
+    echo $p
+done < hello.sh
+
+#2
+cat hello.sh | while read p
+do  
+    echo $p
+done
+
+#3
+
+while IFS= read -r line
+do
+    echo $line
+done < hello.sh
+
+  
+#until loops
+basic syntax:
+until- [ condition ]
+do  
+    command1
+    command2
+    ...
+    ...
+    commandN
+done
+
+#example
+ n=1
+until- [ $n -ge 10 ]
+do  
+   echo $n
+    n=$(( n+1 ))
+done
+
+#For loops
+
+
+#using for loops to execute commands
+for command in ls pwd date
+do 
+  echo "------------------$command-------------------"
+  $command
+done
+
+
+
+#select loop
+
+#Break and continue
+
+#functions
+
+#local variables
+
+
+#Function example
+
+
+#readonly command
+
+#signals and traps
+
+#How to debug a bash script
