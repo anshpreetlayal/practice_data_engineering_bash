@@ -377,6 +377,25 @@ greet "Alice"
 ```
 
 #local variables
+Local variables in Bash functions are variables that are declared and used within the scope of the function. They are not accessible outside of the function.
+
+#Basic Syntax:
+function_name() {
+    local variable_name=value
+    # Rest of the function
+}
+
+#Example:
+calculate_area() {
+    local length=$1
+    local width=$2
+    local area=$(( length * width ))
+    echo "The area is: $area"
+}
+
+length=5
+width=3
+calculate_area $length $width
 
 
 #Function example
