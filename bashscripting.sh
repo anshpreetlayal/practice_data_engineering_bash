@@ -360,6 +360,22 @@ done
 
 #functions
 
+#A function in Bash is a named block of code that performs a specific task. It allows for the organization and reusability of code.
+#Basic Syntax:
+function_name() {
+    # Function body
+    # Commands and statements
+}
+
+# Function definition
+greet() {
+    echo "Hello, $1!"
+}
+
+# Function call
+greet "Alice"
+```
+
 #local variables
 
 
