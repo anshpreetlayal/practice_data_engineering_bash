@@ -1075,7 +1075,9 @@ grep -f patterns.txt filename
 #- `-f patterns.txt`: Read patterns from a file.
 ```
 
-# `netstat` command
+# `netstat`
+
+ command
 
 The `netstat` command in Unix and Linux is used for displaying various networking-related information, including network connections, routing tables, interface statistics, masquerade connections, and multicast memberships. However, similar to `ifconfig`, `netstat` has been deprecated on many modern Linux distributions, and the recommended replacement is the `ss` command or tools like `ip` and `nstat`. Nevertheless, `netstat` is still available on some systems.
 

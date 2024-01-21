@@ -306,6 +306,29 @@ done
 
 #select loop
 
+# Prompt the user with a menu
+select option in option1 option2 option3 quit
+do
+  case $option in
+    "option1")
+      echo "You chose option 1"
+      ;;
+    "option2")
+      echo "You chose option 2"
+      ;;
+    "option3")
+      echo "You chose option 3"
+      ;;
+    "quit")
+      echo "Exiting the menu"
+      break
+      ;;
+    *)
+      echo "Invalid option, please choose again."
+      ;;
+  esac
+done
+
 #Break and continue
 
 #functions
