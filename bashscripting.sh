@@ -330,6 +330,33 @@ do
 done
 
 #Break and continue
+ #`break` and `continue` are control flow statements used in loops to alter the normal flow of execution.
+
+#1. break statement:
+   - The break statement is used to exit a loop prematurely.
+ example of using `break` in a `while` loop:
+     while true; do
+         read -p "Enter a number (0 to exit): " num
+         if [ "$num" -eq 0 ]; then
+             echo "Exiting the loop."
+             break
+         else
+             echo "You entered: $num"
+         fi
+     done
+
+#2. continue statement:
+   - The continue statement is used to skip the rest of the commands in the current iteration of a loop and move on to the next iteration.
+ example of using `continue` in a `for` loop:
+
+     for i in {1..5}; do
+         if [ $i -eq 3 ]; then
+             echo "Skipping iteration $i"
+             continue
+         fi
+         echo "Processing iteration $i"
+     done
+
 
 #functions
 
