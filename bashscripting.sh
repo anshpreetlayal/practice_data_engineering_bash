@@ -398,11 +398,37 @@ width=3
 calculate_area $length $width
 
 
-#Function example
-
-
-#readonly command
 
 #signals and traps
+Signals:
+- In Unix-like operating systems, processes can receive signals, which are software interrupts notifying a process that a specific event has occurred.
+- Signals can be sent by the kernel, other processes, or the process itself.
+- Common signals include `SIGTERM` (termination), `SIGINT` (interrupt from the keyboard), `SIGKILL` (unconditional termination), etc.
+Traps:
+- In Bash scripting, a `trap` is a command that allows a script to intercept and respond to signals.
+- It helps in handling signals and performing specific actions when a signal is received.
+- The `trap` command takes two arguments: the command(s) to be executed when a signal is caught and the signal(s) to catch.
+Basic Syntax:
+trap 'command' signal
+
+Example: Handling SIGINT (Ctrl+C) in a Bash Script:
+#!/bin/bash
+
+cleanup() {
+    echo "Caught interrupt signal. Cleaning up..."
+    # Add cleanup actions here
+    exit 1
+}
+
+trap cleanup SIGINT
+
+echo "Running script..."
+# Add main script logic here
+
+# The script will now catch SIGINT and execute the cleanup function if Ctrl+C is pressed.
+Note:
+- While traps are commonly used to handle signals like `SIGINT` and `SIGTERM`, some signals (e.g., `SIGKILL`) cannot be caught or ignored.
+- Traps are particularly useful for cleanup actions or specific responses to signals during the execution of a script or program.
+
 
 #How to debug a bash script
