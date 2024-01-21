@@ -24,8 +24,6 @@ ansh@Xubuntu:~$ cat /etc/shells
 Bash, or the Bourne Again Shell, is a popular command processor that typically provides a user interface for your Linux or Unix-like operating system.
  It is an enhanced version of the original Bourne Shell (sh) and includes features for scripting and interactive use.
 
-
-
 # Use hash to comment  on bash scripting files
 echo "hello world"
 
@@ -34,18 +32,6 @@ echo  our shell name is $BASH
 echo our shell version name is $BASH_VERSION
 echo home directory is$HOME
 echo our current working directory is $PWD
-
-#output
-#:ansh@Xubuntu:~/Desktop$ ./hello.sh
-#hello world
-#/bin/bash
-#ansh@Xubuntu:~/Desktop$ ./hello.sh
-#hello world
-#/bin/bash
-#5.1.16(1)-release
-#/home/ansh
-#/home/ansh/Desktop
-#ansh@Xubuntu:~/Desktop$ 
 
 
 #Bash scripting examples
@@ -73,12 +59,11 @@ args=("$@")
 echo ${args[0]} ${args[1]} ${args[2]}
 
 
-
 # If statement (if then, if then else, if elif else)
 # syntax:
-# if [ condition ]; then
-#    statement
-# fi
+ if [ condition ]; then
+   statement
+fi
 
 # Example:
 count=10
