@@ -1,14 +1,15 @@
 #! /bin/bash
 
 # Bash Shell Scripting
-
+This file contains notes for basic bash scripting .
 ## What is Shell?
 In the context of operating systems, a shell is a command-line interface that interprets user commands and interacts with the operating system. It acts as an intermediary between the user and the kernel.
 
 ## Types of Shells on an Operating System
 You can check the available shells on your system by examining the "/etc/shells" file:
-```bash
-nsh@Xubuntu:~$ cat /etc/shells
+example:
+
+ansh@Xubuntu:~$ cat /etc/shells
 # /etc/shells: valid login shells
 /bin/sh
 /bin/bash
@@ -18,7 +19,6 @@ nsh@Xubuntu:~$ cat /etc/shells
 /usr/bin/sh
 /bin/dash
 /usr/bin/dash
-```
 
 #What is Bash?
 Bash, or the Bourne Again Shell, is a popular command processor that typically provides a user interface for your Linux or Unix-like operating system.
