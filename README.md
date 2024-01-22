@@ -17,9 +17,8 @@ Let's continue to learn, collaborate, and empower one another in the fascinating
 ![Shell Basics Logo](./image.png)
 
 
-# pwd: 
- Present Working Directory
-
+# `pwd`:  pwd stands for "Print Working Directory." It is a command used in Unix-like operating systems (including Linux and macOS) to display the current working directory.
+When you run the pwd command, it prints the full path of the current directory to the terminal.
 ```bash
 pwd
 ```
