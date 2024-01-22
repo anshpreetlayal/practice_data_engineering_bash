@@ -10,7 +10,7 @@ Feel free to explore, learn, and enhance your proficiency in Bash shell commands
 If you have additional insights, tips, or even new commands to share, feel free to contribute! Fork the repository, make your changes, and submit a pull request. Together, we can build a comprehensive reference for everyone in the community.
 
 Acknowledgment
-These notes are a product of my learning journey, inspired by the valuable insights gained from the youtube https://www.youtube.com/watch?v=YHFzr-akOas&list=PLS1QulWo1RIb9WVQGJ_vh-RQusbZgO_As&index=1  course. that I undertook. 
+These notes are a product of my learning journey, inspired by the valuable insights gained from the youtube https://www.youtube.com/watch?v=YHFzr-akOas&list=PLS1QulWo1RIb9WVQGJ_vh-RQusbZgO_As&index=1  course that I undertook. 
 
 Let's continue to learn, collaborate, and empower one another in the fascinating realm of Bash shell commands. Happy coding! 🚀
 
@@ -172,7 +172,7 @@ removed directory 'a/b/'
 
 ansh@Xubuntu:~/Desktop$ rm -r a
 
-cp command
+# cp command
 syntax: 
  cp options source destination
 
