@@ -24,7 +24,7 @@ pwd
 ```
 
 # `ls` command
- - List the content of a directory
+  List the content of a directory
 ```bash
 
 ls [options] [filename]  # or ls filename/ to list contents of a particular directory
