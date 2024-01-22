@@ -18,7 +18,7 @@ Let's continue to learn, collaborate, and empower one another in the fascinating
 
 
 # pwd: 
-- Present Working Directory
+ Present Working Directory
 
 ```bash
 pwd
