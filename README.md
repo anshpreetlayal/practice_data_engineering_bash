@@ -1,4 +1,4 @@
-# Shell Basics Repository
+## Shell Basics Repository
 
 Greetings! 👋 Welcome to the "Shell Basics" repository – your go-to resource for mastering the essentials of Bash shell commands. Here, I've curated a collection of notes covering fundamental operations, from navigating directories to managing files and users.
 
@@ -6,7 +6,7 @@ Whether you're a newcomer seeking guidance or an experienced user looking to bru
 
 Feel free to explore, learn, and enhance your proficiency in Bash shell commands. Happy coding! 🚀
 
-# How to Contribute
+## How to Contribute
 If you have additional insights, tips, or even new commands to share, feel free to contribute! Fork the repository, make your changes, and submit a pull request. Together, we can build a comprehensive reference for everyone in the community.
 
 Acknowledgment
@@ -17,13 +17,14 @@ Let's continue to learn, collaborate, and empower one another in the fascinating
 ![Shell Basics Logo](./image.png)
 
 
-# `pwd`:  pwd stands for "Print Working Directory." It is a command used in Unix-like operating systems (including Linux and macOS) to display the current working directory.
+## `pwd`: 
+ pwd stands for "Print Working Directory." It is a command used in Unix-like operating systems (including Linux and macOS) to display the current working directory.
 When you run the pwd command, it prints the full path of the current directory to the terminal.
 ```bash
 pwd
 ```
 
-# `ls` command
+## `ls` command
   List the content of a directory
 ```bash
 
@@ -52,7 +53,7 @@ man ls
 
 ```
 
-# `cd` Command - Change Directory
+## `cd` Command - Change Directory
 The `cd`  command in the shell is a versatile tool for navigating the file system. It is used to display the name of the current working directory or to change the current directory. Below are some common use cases:
 
 ```bash
@@ -79,7 +80,7 @@ cd 'My Books'
 
 ```
 
-# `cat` Command
+## `cat` Command
 The `cat` command in Unix-like operating systems is used to concatenate and display the content of files. It is a versatile command that can be used for various purposes related to file manipulation.
 
 ## Basic Syntax
@@ -126,7 +127,7 @@ ansh@Xubuntu:~$ cat -n hello.txt
 
    cat filename1 >> filename2 = to append from filename 1 to filename2
 
-# `mkdir` command
+## `mkdir` command
 The `mkdir` command in Linux/Unix is used to create directories (folders). 
  Basic Syntax:
 mkdir [options] directoryname
@@ -147,7 +148,7 @@ Create Nested Directories
 #   This command creates a nested directory structure with the `-p` option.
 ```
 
-# `Rmdir` and `RM`  Command
+## `Rmdir` and `RM`  Command
 `rmdir` Command:
 The `rmdir` command is used to remove empty directories. If a directory contains files, `rmdir` alone may not be sufficient. In such cases, you might need to use `rm` to remove the directory and its contents.
 Basic syntax:
@@ -166,7 +167,7 @@ rmdir -pv a/b/c/d/e
 #The `-pv` option displays extended information while removing the directory structure "a/b/c/d/e." It shows the step-by-step removal process.
 ```
 
-# `rm` Command:
+## `rm` Command:
 The `rm` command is a versatile command used for removing files and directories. The `-r` option removes a directory and its contents recursively. Use it with caution, as it can delete entire directory structures.
 basic syntax:
 rm filename/directoryname
@@ -188,7 +189,7 @@ rm -r directoryname
 #This command removes a non-empty directory and its contents. Be cautious, as it can delete files and subdirectories.
 ```
 
-# `cp` command
+## `cp` command
  The `cp` command in Linux/Unix is used to copy files and directories from one location to another. 
  Basic Syntax:
 cp [options] source destination
@@ -227,7 +228,7 @@ cp -i important_file.txt backup/
 cp file1.txt file2.txt file3.txt /path/to/directory/
   ```
 
-# `mv` command
+## `mv` command
 The `mv` command in Unix-like operating systems is used to move or rename files and directories.
  Its basic syntax is as follows:
 mv [OPTION] source destination
@@ -258,7 +259,7 @@ mv filename ~
 man mv
 ```
 
-# `less` command
+## `less` command
 The `less` command is a terminal pager program used to view the contents of a text file in a scrollable and interactive way. It is commonly employed for navigating through large files without loading the entire content into memory. less provides more features compared to the traditional more command, allowing users to move both forward and backward through the file, search for specific text, and perform other actions.
 
 Here are some key features of the less command:
