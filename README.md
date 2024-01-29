@@ -14,7 +14,7 @@ These notes are a product of my own learning journey, inspired by the invaluable
 
 Let's continue to learn, collaborate, and empower one another in the fascinating realm of Bash shell commands. Happy coding! 🚀
 
-![Shell Basics Logo](./image.png)
+<img src="./image.png" alt="Shell Basics Logo" width="300"/>
 
 
 ## Getting Started: Shell Basics
