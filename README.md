@@ -806,17 +806,26 @@ df -h
 -T: Display the filesystem type along with the disk space information.
 ```
 
-3. `free` - Display System Memory:
-The free command shows information about system memory usage.
-Syntax:
-free [options]
+## `free` Command: Display System Memory
 
+The `free` command shows information about system memory usage.
+
+### Syntax:
 ```bash
-#example
-free -h
--h: Human-readable output.
--t: Display a line showing the total memory.
+free [options]
 ```
+
+### Example:
+```bash
+# Example usage
+free -h
+```
+
+### Options:
+- **-h:** Human-readable output.
+- **-t:** Display a line showing the total memory.
+
+The `free` command is useful for monitoring memory usage on a system. The options allow you to customize the output for better readability and specific information.
 
 # `Watch` command
 The `watch` command is used to execute a command periodically and display the output in a clear and formatted way.
