@@ -901,14 +901,19 @@ head -q file1 file2
 - **-c N or --bytes=N:** Specify the number of bytes to display.
 - **-q or --quiet, --silent:** Suppress the printing of headers when multiple files are specified.
 
-The `head` command is useful for quickly previewing the beginning of a file, and the options provide flexibility in terms of the number of lines or bytes to display.
-# `Tail` command
-The `tail` command in Unix and Linux is used to display the last part of a text file or the output of a command. By default, it displays the last 10 lines of a file. 
-The basic syntax of the tail command:
-tail [options] [file(s)]
 
+## `tail` Command: Display End of a File
+
+The `tail` command in Unix and Linux is used to display the last part of a text file or the output of a command. By default, it displays the last 10 lines of a file.
+
+### Basic Syntax:
 ```bash
-#This command displays the last 10 lines of the specified file.
+tail [options] [file(s)]
+```
+
+### Examples:
+```bash
+# Display the last 10 lines of the specified file
 tail filename
 
 # Display the last 5 lines of a file
@@ -922,13 +927,14 @@ tail -q file1 file2
 
 # Display appended data in real-time (useful for log files)
 tail -f logfile
-
-Common Options:
--n N or --lines=N: Specify the number of lines to display (replace N with a number).
--c N or --bytes=N: Specify the number of bytes to display.
--f or --follow: Output appended data as the file grows.
--q or --quiet, --silent: Suppress the printing of headers when multiple files are specified.
 ```
+
+### Common Options:
+- **-n N or --lines=N:** Specify the number of lines to display (replace N with a number).
+- **-c N or --bytes=N:** Specify the number of bytes to display.
+- **-f or --follow:** Output appended data as the file grows.
+- **-q or --quiet, --silent:** Suppress the printing of headers when multiple files are specified.
+
 
 # `Find` command
 The `find` command in Unix and Linux is a powerful tool used for searching and locating files and directories based on various criteria. 
