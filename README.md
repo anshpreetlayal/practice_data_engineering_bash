@@ -783,17 +783,27 @@ source ~/.bashrc
 # Viewing resources (`du`, `df`, `free`)
 The commands `du`, `df`, and `free` are used to view information about disk usage and system memory. Here's a brief overview of each:
 
-1. `du` - Disk Usage: 
-The du command is used to estimate the space used by a directory or file.
-Syntax:
-du [options] [directory/file]
+## `du` Command: Disk Usage
 
+The `du` command is used to estimate the space used by a directory or file.
+
+### Syntax:
 ```bash
-#example
-du -sh /path/to/directory
-#-s: Display only the total for each specified file or directory.
-#-h: Human-readable output (e.g., KB, MB, GB).
+du [options] [directory/file]
 ```
+
+### Example:
+```bash
+# Example usage
+du -sh /path/to/directory
+```
+
+### Options:
+- **-s:** Display only the total for each specified file or directory.
+- **-h:** Human-readable output (e.g., KB, MB, GB).
+
+The `du` command is valuable for assessing disk space usage at the directory or file level, and the options provide flexibility in the output format.
+
 ## `df` Command: Disk Free
 
 The `df` command shows information about disk space usage on mounted filesystems.
