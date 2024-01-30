@@ -936,12 +936,16 @@ tail -f logfile
 - **-q or --quiet, --silent:** Suppress the printing of headers when multiple files are specified.
 
 
-# `Find` command
-The `find` command in Unix and Linux is a powerful tool used for searching and locating files and directories based on various criteria. 
-It is commonly used to perform tasks such as finding files by name, type, size, or modified time.
-The basic syntax of the find command:
-find [path...] [expression]
+## `Find` Command: Search and Locate Files
 
+The `find` command in Unix and Linux is a powerful tool used for searching and locating files and directories based on various criteria. It is commonly used to perform tasks such as finding files by name, type, size, or modified time.
+
+### Basic Syntax:
+```bash
+find [path...] [expression]
+```
+
+### Examples:
 ```bash
 # Find all text files in the current directory and its subdirectories
 find . -type f -name "*.txt"
@@ -954,14 +958,15 @@ find /path/to/search -mtime -1
 
 # Find and delete all files older than 30 days
 find /path/to/search -type f -mtime +30 -exec rm {} \;
-
-Common Expressions:
--name pattern: Match files by name using a wildcard pattern.
--type type: Match files of a specific type (e.g., f for regular files, d for directories).
--size n[cwbkMG]: Match files based on size (e.g., +10M for files larger than 10 megabytes).
--mtime n: Match files based on modification time (e.g., -mtime -7 for files modified within the last 7 days).
--exec command {} +: Execute a command on each matched file.
 ```
+
+### Common Expressions:
+- **-name pattern:** Match files by name using a wildcard pattern.
+- **-type type:** Match files of a specific type (e.g., f for regular files, d for directories).
+- **-size n[cwbkMG]:** Match files based on size (e.g., +10M for files larger than 10 megabytes).
+- **-mtime n:** Match files based on modification time (e.g., -mtime -7 for files modified within the last 7 days).
+- **-exec command {} +:** Execute a command on each matched file.
+
 
 # `wc` command
 The `wc` command in Unix and Linux is used to count the number of lines, words, and bytes in a file or input provided through a pipeline.
