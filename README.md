@@ -869,16 +869,21 @@ watch -n 1 -d ls -l
 Press `Ctrl+C` to exit the `watch` command.
 
 
-# `Head` command
-The `head` command in Unix and Linux is used to display the beginning (head) portion of a text file or the output of a command. By default, it displays the first 10 lines of a file. 
-The basic syntax:
-head [options] [file(s)]
+## `head` Command: Display Beginning of a File
 
+The `head` command in Unix and Linux is used to display the beginning (head) portion of a text file or the output of a command. By default, it displays the first 10 lines of a file.
+
+### Basic Syntax:
 ```bash
-# To display the first 10 lines of a file you want to see
+head [options] [file(s)]
+```
+
+### Examples:
+```bash
+# Display the first 10 lines of a file you want to see
 head filename
 
-# To customize the lines you want to see, use '-n' flag
+# Customize the number of lines you want to see using the '-n' flag
 head -n3 filename
 
 # Display the first 5 lines of a file
@@ -889,13 +894,14 @@ head -c 20 filename
 
 # Display the first 10 lines of multiple files, suppressing headers
 head -q file1 file2
-
-Common Options:
--n N or --lines=N: Specify the number of lines to display (replace N with a number).
--c N or --bytes=N: Specify the number of bytes to display.
--q or --quiet, --silent: Suppress the printing of headers when multiple files are specified.
-
 ```
+
+### Common Options:
+- **-n N or --lines=N:** Specify the number of lines to display (replace N with a number).
+- **-c N or --bytes=N:** Specify the number of bytes to display.
+- **-q or --quiet, --silent:** Suppress the printing of headers when multiple files are specified.
+
+The `head` command is useful for quickly previewing the beginning of a file, and the options provide flexibility in terms of the number of lines or bytes to display.
 # `Tail` command
 The `tail` command in Unix and Linux is used to display the last part of a text file or the output of a command. By default, it displays the last 10 lines of a file. 
 The basic syntax of the tail command:
