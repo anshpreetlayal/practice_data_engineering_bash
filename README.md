@@ -794,17 +794,26 @@ du -sh /path/to/directory
 #-s: Display only the total for each specified file or directory.
 #-h: Human-readable output (e.g., KB, MB, GB).
 ```
-2. `df` - Disk Free:
-The df command shows information about disk space usage on mounted filesystems.
-Syntax:
-df [options]
+## `df` Command: Disk Free
 
+The `df` command shows information about disk space usage on mounted filesystems.
+
+### Syntax:
 ```bash
-#example
-df -h
--h: Human-readable output.
--T: Display the filesystem type along with the disk space information.
+df [options]
 ```
+
+### Example:
+```bash
+# Example usage
+df -h
+```
+
+### Options:
+- **-h:** Human-readable output.
+- **-T:** Display the filesystem type along with the disk space information.
+
+The `df` command is essential for checking disk space usage, and the options provide flexibility in presenting the information in a more readable and informative format.
 
 ## `free` Command: Display System Memory
 
